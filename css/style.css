@@ -83,3 +83,10 @@ fieldset:disabled .btn {
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
+
+
+/* border */
+.step-border {
+  border-radius: 8px;
+background: rgba(204, 217, 217, 0.60);
+}
