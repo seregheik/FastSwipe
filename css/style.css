@@ -24,6 +24,13 @@ body {
   background-color: #023f40 !important;
 }
 
+.bg-gradient {
+background: radial-gradient(at left top, #05f22923, #023f4000) !important;
+}
+.bg-gradient-nav {
+background: radial-gradient(at left bottom, #05f22923, #023f4000);
+ }
+
 .bg-secondary {
   background-color: #f8f8f8 !important;
 }
@@ -101,12 +108,11 @@ fieldset:disabled .btn {
   font-size: 11px;
 }
 
-
 /* border */
 .step-border {
   border-radius: 8px;
-background: rgba(204, 217, 217, 0.60);
-height: 9rem;
+  background: rgba(204, 217, 217, 0.6);
+  height: 9rem;
 }
 
 /* responsive */
