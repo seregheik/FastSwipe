@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("/css/satoshi.css");
+
+
+body {
+    font-family: 'Satoshi-Variable';
+}
+
+
+.inter-family {
+  font-family: "Inter", sans-serif;
+}
+.satoshi {
+    font-family: 'Satoshi-Variable';
+}
+.bg-green-secondary{
+    background-color: #05F228;
+}
+.text-success {
+    color: #05F228 !important;
+}
+.bg-primary {
+    background-color: #023F40 !important;
+}
+
+.btn-success {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #023F40;
+    --bs-btn-border-color: #023F40;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #013a3b;
+    --bs-btn-hover-border-color: #012b2c;
+    --bs-btn-focus-shadow-rgb: 60, 153, 110;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #022627;
+    --bs-btn-active-border-color: #012020;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #023F40;
+    --bs-btn-disabled-border-color: #023F40;
+}
+.btn-secondary {
+    --bs-btn-color: #023F40;
+    --bs-btn-bg: #05F228;
+    --bs-btn-border-color: #05F228;
+    --bs-btn-hover-color: #023F40;
+    --bs-btn-hover-bg: #37f754;
+    --bs-btn-hover-border-color: #31eb4d;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #023F40;
+    --bs-btn-active-bg: #31eb4d;
+    --bs-btn-active-border-color: #28f747;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #05F228;
+    --bs-btn-disabled-border-color: #05F228;
+}
