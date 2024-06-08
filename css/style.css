@@ -90,3 +90,11 @@ fieldset:disabled .btn {
   border-radius: 8px;
 background: rgba(204, 217, 217, 0.60);
 }
+
+/* responsive */
+@media (min-width: 992px) {
+  .col-lg-4-modified {
+    flex: 0 0 auto;
+    width: 30.33333333%;
+  }
+}
