@@ -78,3 +78,8 @@ fieldset:disabled .btn {
 .text-neutral {
   color: #36474f;
 }
+.steps-header {
+  color: #023f40;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
