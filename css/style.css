@@ -19,8 +19,13 @@ body {
 .text-success {
     color: #05F228 !important;
 }
+
 .bg-primary {
     background-color: #023F40 !important;
+}
+
+.bg-secondary {
+    background-color: #F8F8F8 !important;
 }
 
 .btn-success {
@@ -54,4 +59,9 @@ body {
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #05F228;
     --bs-btn-disabled-border-color: #05F228;
+}
+
+/* text classes */
+.text-neutral {
+    color: #36474F;
 }
