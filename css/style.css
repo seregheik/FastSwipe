@@ -161,6 +161,10 @@ fieldset:disabled .btn {
 .text-footer-link {
   color: #CCD9D9;
 }
+
+.text-footer-link:hover {
+  color: #ffffff;
+}
 ul li
 {
     list-style-type: none;
