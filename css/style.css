@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("/css/satoshi.css");
-
 body {
   font-family: "Satoshi-Variable";
 }
-
 .inter-family {
   font-family: "Inter", sans-serif;
 }
@@ -23,34 +21,27 @@ body {
 .bg-primary {
   background-color: #023f40 !important;
 }
-
 .bg-gradient {
-background: radial-gradient(at left top, #05f22923, #023f4000) !important;
+  background: radial-gradient(at left top, #05f22923, #023f4000) !important;
 }
 .bg-gradient-nav {
-background: radial-gradient(at left bottom, #05f22923, #023f4000);
- }
-
+  background: radial-gradient(at left bottom, #05f22923, #023f4000);
+}
 .bg-secondary {
   background-color: #f8f8f8 !important;
 }
-
 .vh-100 {
   min-height: 100vh !important;
 }
-
 .vh-header {
   min-height: 60vh !important;
 }
-
 .vh-80 {
   min-height: 80vh !important;
 }
-
 .vh-75 {
   min-height: 75vh !important;
 }
-
 .btn-success {
   --bs-btn-color: #fff;
   --bs-btn-bg: #023f40;
@@ -83,7 +74,6 @@ background: radial-gradient(at left bottom, #05f22923, #023f4000);
   --bs-btn-disabled-bg: #05f228;
   --bs-btn-disabled-border-color: #05f228;
 }
-
 .btn:disabled,
 .btn.disabled,
 fieldset:disabled .btn {
@@ -96,8 +86,6 @@ fieldset:disabled .btn {
   border: 1px solid #e8e8e8 !important;
   background: #fff;
 }
-
-/* text classes */
 .text-neutral {
   color: #36474f;
 }
@@ -107,14 +95,12 @@ fieldset:disabled .btn {
   text-transform: uppercase;
   font-size: 11px;
 }
-
 /* border */
 .step-border {
   border-radius: 8px;
   background: rgba(204, 217, 217, 0.6);
   height: 9rem;
 }
-
 /* responsive */
 @media (min-width: 992px) {
   .col-lg-4-modified {
@@ -122,24 +108,45 @@ fieldset:disabled .btn {
     width: 30.33333333%;
   }
 }
-
 .cta-image {
- max-width: 100%;
- max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
-
-
 .cta-gradient {
-  background: rgb(2,63,64);
-background: -moz-linear-gradient(90deg, rgba(2,63,64,1) 44%, rgba(3,110,58,1) 64%, rgba(3,122,56,1) 78%, rgba(3,104,58,1) 93%, rgba(2,83,61,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(2,63,64,1) 44%, rgba(3,110,58,1) 64%, rgba(3,122,56,1) 78%, rgba(3,104,58,1) 93%, rgba(2,83,61,1) 100%);
-background: linear-gradient(90deg, rgba(2,63,64,1) 44%, rgba(3,110,58,1) 64%, rgba(3,122,56,1) 78%, rgba(3,104,58,1) 93%, rgba(2,83,61,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023f40",endColorstr="#02533d",GradientType=1);
+  background: rgb(2, 63, 64);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(2, 63, 64, 1) 44%,
+    rgba(3, 110, 58, 1) 64%,
+    rgba(3, 122, 56, 1) 78%,
+    rgba(3, 104, 58, 1) 93%,
+    rgba(2, 83, 61, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(2, 63, 64, 1) 44%,
+    rgba(3, 110, 58, 1) 64%,
+    rgba(3, 122, 56, 1) 78%,
+    rgba(3, 104, 58, 1) 93%,
+    rgba(2, 83, 61, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(2, 63, 64, 1) 44%,
+    rgba(3, 110, 58, 1) 64%,
+    rgba(3, 122, 56, 1) 78%,
+    rgba(3, 104, 58, 1) 93%,
+    rgba(2, 83, 61, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023f40",endColorstr="#02533d",GradientType=1);
 }
-
 .cta-image {
-  background: url('/img/images/cta.png');
+  background: url("/img/images/cta.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+}
+
+.fs-8 {
+  font-size: 0.8rem;
 }
