@@ -150,3 +150,18 @@ fieldset:disabled .btn {
 .fs-8 {
   font-size: 0.8rem;
 }
+
+.fs-7 {
+  font-size: 0.9rem;
+}
+
+.text-footer {
+  color: #CCD9D9;
+}
+.text-footer-link {
+  color: #CCD9D9;
+}
+ul li
+{
+    list-style-type: none;
+}
