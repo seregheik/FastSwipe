@@ -122,3 +122,24 @@ fieldset:disabled .btn {
     width: 30.33333333%;
   }
 }
+
+.cta-image {
+ max-width: 100%;
+ max-height: 100%;
+}
+
+
+.cta-gradient {
+  background: rgb(2,63,64);
+background: -moz-linear-gradient(90deg, rgba(2,63,64,1) 44%, rgba(3,110,58,1) 64%, rgba(3,122,56,1) 78%, rgba(3,104,58,1) 93%, rgba(2,83,61,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(2,63,64,1) 44%, rgba(3,110,58,1) 64%, rgba(3,122,56,1) 78%, rgba(3,104,58,1) 93%, rgba(2,83,61,1) 100%);
+background: linear-gradient(90deg, rgba(2,63,64,1) 44%, rgba(3,110,58,1) 64%, rgba(3,122,56,1) 78%, rgba(3,104,58,1) 93%, rgba(2,83,61,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023f40",endColorstr="#02533d",GradientType=1);
+}
+
+.cta-image {
+  background: url('/img/images/cta.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
