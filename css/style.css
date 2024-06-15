@@ -183,6 +183,16 @@ ul li
 .navbar-toggler {
   border: var(--bs-border-width) solid rgb(0 0 0 / 0%);
 }
+
+.navbar-toggler-light:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 1px #023f40 !important;
+}
+
+.navbar-toggler-light {
+  border: var(--bs-border-width) solid rgb(0 0 0 / 0%);
+}
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #023F40;
