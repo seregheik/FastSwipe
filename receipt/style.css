@@ -1,0 +1,14 @@
+@import url("./satoshi.css");
+
+body {
+    font-family: "Satoshi-Variable";
+}
+
+
+
+
+.max-width {
+    max-width: 450px !important;
+    /* background-color: aquamarine; */
+    min-height: 100vh;
+}
