@@ -89,6 +89,9 @@ fieldset:disabled .btn {
 .text-neutral {
   color: #36474f;
 }
+.bg-search {
+  color: #F9FAFA;
+}
 .steps-header {
   color: #023f40;
   letter-spacing: 2.8px;
@@ -225,4 +228,8 @@ ul li
   --bs-btn-disabled-bg: #ccd9d94d;;
   --bs-btn-disabled-border-color: #ccd9d94d;;
   border-radius: 100px !important;
+}
+
+.text-purple {
+  color: #023F40
 }
