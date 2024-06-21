@@ -84,6 +84,18 @@ textarea {
     width: 9px;
     height: 9px;
   }
+  .green-box {
+    border-radius: 2px;
+    background: #05F228;
+    width: 9px;
+    height: 9px;
+  }
+  .pink-box {
+    border-radius: 2px;
+    background: #FF9D98;
+    width: 9px;
+    height: 9px;
+  }
   .bg-red {
     background: #EA0000;
   }
@@ -96,3 +108,4 @@ textarea {
   .text-red {
     color: #EA0000 !important;
   }
+
