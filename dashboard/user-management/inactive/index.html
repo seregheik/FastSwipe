@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - Home</title>
+    <title>Dashboard - User Management</title>
     <link rel="stylesheet" href="/css/bootstrap.css" />
-    <!-- <link rel="stylesheet" href="/css/bootstrap.css.map"> -->
+    <link rel="stylesheet" href="/css/bootstrap.css.map" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../../styles/style.css" />
 </head>
 
 <body>
@@ -16,8 +16,10 @@
         <div class="container">
             <div class="row vh-100 justify-content-center align-items-center">
                 <div class="col fw-bold text-center">
-                    This website is optimized for tablets,desktop and laptop screens. To
-                    view the features and content, we recommend switching to a
+                    This website is optimized for tablets,desktop and laptop
+                    screens. To
+                    view the features and content, we recommend switching to
+                    a
                     tablet,desktop or laptop.
                 </div>
             </div>
@@ -29,12 +31,12 @@
                 <div class="col-3 text-light overflow-auto bg-primary vh-100">
                     <div class="ps-2">
                         <div class="py-4 pe-5">
-                            <img src="/img/icon/Fastswipe.svg" width="125px" class="img-fluid" alt="" srcset="" />
+                            <img src="/img/icon/Fastswipe.svg" width="125px" class="img-fluid" alt srcset />
                         </div>
                         <div class="fs-6 pb-3">General</div>
                         <div class="empty">
                             <a href="/dashboard/"
-                                class="text-start btn active d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
+                                class="text-start btn  d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
                                     <mask id="mask0_2700_6174" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0"
@@ -51,8 +53,8 @@
                             </a>
                         </div>
                         <div class="empty">
-                            <a href="./user-management/"
-                                class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
+                            <a href="../../user-management/"
+                                class="text-start  active btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
                                     <mask id="mask0_2700_6180" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0"
@@ -69,7 +71,7 @@
                             </a>
                         </div>
                         <div class="empty">
-                            <a href="./transactions/"
+                            <a href="../../transactions/"
                                 class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
@@ -87,7 +89,7 @@
                             </a>
                         </div>
                         <div class="empty">
-                            <a href="./analytics/"
+                            <a href="../../analytics/"
                                 class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
@@ -110,7 +112,7 @@
                     <div class="ps-2">
                         <div class="fs-6 pb-3">Admin & Staff</div>
                         <div class="empty">
-                            <a href="./support/"
+                            <a href="../../support/"
                                 class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
@@ -128,7 +130,7 @@
                             </a>
                         </div>
                         <div class="empty">
-                            <a href="./promotional-offers/"
+                            <a href="../../promotional-offers/"
                                 class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
@@ -146,7 +148,7 @@
                             </a>
                         </div>
                         <div class="empty">
-                            <a href="./transactions/"
+                            <a href="../../transactions/"
                                 class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
@@ -203,66 +205,216 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-9 overflow-auto">
+                <!-- main dashboard -->
+                <div class="col-9 overflow-auto vh-100">
                     <div class="container">
-                        <div class="row pt-3">
-                            <div class="col-6">
-                                <div class="input-group input-group-sm bg-search">
-                                    <span class="input-group-text" id="basic-addon1"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none">
-                                            <circle cx="6.6001" cy="6.59998" r="6" stroke="#36474F"
-                                                stroke-width="1.2" />
-                                            <path d="M11 11L15.2426 15.2426" stroke="#36474F" stroke-width="1.2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></span>
-                                    <input type="text" class="form-control form-control-sm" placeholder="Search"
-                                        aria-label="Search" aria-describedby="basic-addon1" />
+                        <div class="row">
+                            <!-- dashboard header  -->
+                            <div class="col-12 sticky-top py-3 bg-fff">
+                                <div class="row">
+                                    <div class="col-6 bg-search">
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-text" id="basic-addon1"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <circle cx="6.6001" cy="6.59998" r="6" stroke="#36474F"
+                                                        stroke-width="1.2" />
+                                                    <path d="M11 11L15.2426 15.2426" stroke="#36474F" stroke-width="1.2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg></span>
+                                            <input type="text" class="form-control form-control-sm" placeholder="Search"
+                                                aria-label="Search" aria-describedby="basic-addon1" />
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end">
+                                        <div
+                                            class="px-1 badge bg-primary badge-width fs-6 d-flex align-items-center justify-content-center p-1 fw-bold">
+                                            L
+                                        </div>
+                                        <div class="px-3 d-block">
+                                            <div class="fs-7 fw-bold">Lawrence</div>
+                                            <div class="text-neutral fs-10">Administrator</div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <mask id="mask0_2579_2785" style="mask-type: alpha"
+                                                maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect width="32" height="32" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_2579_2785)">
+                                                <path
+                                                    d="M16 20.4995L8 12.4995L9.86667 10.6328L16 16.7661L22.1333 10.6328L24 12.4995L16 20.4995Z"
+                                                    fill="#121212" />
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 d-flex justify-content-end">
-                                <div
-                                    class="px-1 badge bg-primary badge-width fs-6 d-flex align-items-center justify-content-center p-1 fw-bold">
-                                    L
+
+                            <div class="col-12 py-3"></div>
+                            <!-- content of main dashboard -->
+                            <div class="bg-search overflow">
+                                <div class="col-12 d-flex bg-search justify-content-between">
+                                    <div class="px-3 d-block">
+                                        <div class="fs-5 fw-bold">User Management</div>
+                                        <div class="text-neutral fs-9">Wed
+                                            7th March, 2024</div>
+                                    </div>
                                 </div>
-                                <div class="px-3 d-block">
-                                    <div class="fs-7 fw-bold">Lawrence</div>
-                                    <div class="text-neutral fs-10">Administrator</div>
+                                <div class="col-12">
+                                    <div class="row px-2 py-4">
+                                        <div class="col-6">
+                                            <div class="btn-group rounded-1" role="group"
+                                                aria-label="Basic mixed styles example">
+                                                <a href="../" type="button" class="btn btn-outline-primary">Active</a>
+                                                <a href="./" type="button"
+                                                    class="btn btn-success">Inactive</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-6"></div>
+
+                                    </div>
+                                    <hr>
                                 </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                                    fill="none">
-                                    <mask id="mask0_2579_2785" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0"
-                                        y="0" width="32" height="32">
-                                        <rect width="32" height="32" fill="#D9D9D9" />
-                                    </mask>
-                                    <g mask="url(#mask0_2579_2785)">
-                                        <path
-                                            d="M16 20.4995L8 12.4995L9.86667 10.6328L16 16.7661L22.1333 10.6328L24 12.4995L16 20.4995Z"
-                                            fill="#121212" />
-                                    </g>
-                                </svg>
+                                <div class="col-12 pb-3">
+                                    <div class="fs-7 fw-bold text-capitalize">users (105,000)</div>
+                                </div>
+                                <!-- tables  -->
+                                <table class="table fs-8 table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Users Name</th>
+                                            <th scope="col">Email Address</th>
+                                            <th scope="col">Accound No</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">13</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">14</th>
+                                            <td>Lawrence Obazee</td>
+                                            <td>lawrenceobazee@gmail.com</td>
+                                            <td>012344567121</td>
+                                            <td class="text-red">Inactive</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="modal fade" id="logout" tabindex="-1" data-bs-backdrop="static" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content py-3">
-                        <div class="container pb-2 pt-4 text-purple text-center">
-                            <div class="fs-5 fw-bold">Log Out?</div>
-                            <div class="fs-7">are you sure you want to log out?</div>
-                        </div>
-                        <hr />
-                        <div class="d-flex justify-content-evenly py-3">
-                            <button type="button" class="btn text-purple btn-shadows fs-7 btn-light"
-                                data-bs-dismiss="modal">
-                                Cancel
-                            </button>
-                            <button type="button" class="btn text-purple btn-shadows fs-7 btn-light">
-                                Log Out
-                            </button>
+
+                    <!-- logout  -->
+                    <div class="modal fade" id="logout" tabindex="-1" data-bs-backdrop="static" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content py-3">
+                                <div class="container pb-2 pt-4 text-purple text-center">
+                                    <div class="fs-5 fw-bold">Log Out?</div>
+                                    <div class="fs-7">are you sure you want
+                                        to log out?</div>
+                                </div>
+                                <hr />
+                                <div class="d-flex justify-content-evenly py-3">
+                                    <button type="button" class="btn text-purple btn-shadows fs-7 btn-light"
+                                        data-bs-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn text-purple btn-shadows fs-7 btn-light">
+                                        Log Out
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

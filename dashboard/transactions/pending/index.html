@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard - Transactions</title>
+        <link rel="stylesheet" href="/css/bootstrap.css" />
+        <link rel="stylesheet" href="/css/bootstrap.css.map" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="../../styles/style.css" />
+    </head>
+
+    <body>
+        <div id="usedesktop" class="d-md-none bg-primary text-light">
+            <div class="container">
+                <div
+                    class="row vh-100 justify-content-center align-items-center">
+                    <div class="col fw-bold text-center">
+                        This website is optimized for tablets,desktop and laptop
+                        screens. To
+                        view the features and content, we recommend switching to
+                        a
+                        tablet,desktop or laptop.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div
+                        class="col-3 text-light overflow-auto bg-primary vh-100">
+                        <div class="ps-2">
+                            <div class="py-4 pe-5">
+                                <img src="/img/icon/Fastswipe.svg" width="125px"
+                                    class="img-fluid" alt srcset />
+                            </div>
+                            <div class="fs-6 pb-3">General</div>
+                            <div class="empty">
+                                <a href="/dashboard/"
+                                    class="text-start btn  d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none">
+                                        <mask id="mask0_2700_6174"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse" x="0"
+                                            y="0" width="24" height="24">
+                                            <rect width="24" height="24"
+                                                fill="currentColor" />
+                                        </mask>
+                                        <g mask="url(#mask0_2700_6174)">
+                                            <path
+                                                d="M3.25 3.24976H10.75V10.7497H3.25V3.24976ZM13.25 3.24976H20.75V10.7497H13.25V3.24976ZM3.25 13.2498H10.75V20.7497H3.25V13.2498ZM16.25 13.2498H17.75V16.2498H20.75V17.7497H17.75V20.7497H16.25V17.7497H13.25V16.2498H16.25V13.2498ZM14.75 4.74971V9.24976H19.25V4.74971H14.75ZM4.74995 4.74971V9.24976H9.25V4.74971H4.74995ZM4.74995 14.7497V19.2498H9.25V14.7497H4.74995Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                    <span class="px-2">Dashboard</span>
+                                </a>
+                            </div>
+                            <div class="empty">
+                                <a href="../../user-management/"
+                                    class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none">
+                                        <mask id="mask0_2700_6180"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse" x="0"
+                                            y="0" width="24" height="24">
+                                            <rect width="24" height="24"
+                                                fill="currentColor" />
+                                        </mask>
+                                        <g mask="url(#mask0_2700_6180)">
+                                            <path
+                                                d="M6.02308 17.2923C6.87308 16.6616 7.79903 16.1635 8.80095 15.7981C9.80287 15.4327 10.8692 15.25 12 15.25C13.1307 15.25 14.1971 15.4327 15.199 15.7981C16.2009 16.1635 17.1269 16.6616 17.9769 17.2923C18.5987 16.609 19.0913 15.818 19.4548 14.9193C19.8182 14.0205 20 13.0474 20 12C20 9.78334 19.2208 7.89584 17.6625 6.33751C16.1041 4.77917 14.2166 4.00001 12 4.00001C9.78331 4.00001 7.89581 4.77917 6.33748 6.33751C4.77914 7.89584 3.99998 9.78334 3.99998 12C3.99998 13.0474 4.18171 14.0205 4.54518 14.9193C4.90864 15.818 5.40128 16.609 6.02308 17.2923ZM12.0003 12.75C11.0873 12.75 10.3173 12.4366 9.69038 11.8099C9.06346 11.1832 8.75 10.4133 8.75 9.50031C8.75 8.58729 9.06336 7.81732 9.69008 7.19041C10.3168 6.56349 11.0867 6.25003 11.9997 6.25003C12.9127 6.25003 13.6827 6.56339 14.3096 7.19011C14.9365 7.81684 15.25 8.58671 15.25 9.49971C15.25 10.4127 14.9366 11.1827 14.3099 11.8096C13.6831 12.4365 12.9133 12.75 12.0003 12.75ZM12 21.5C10.6807 21.5 9.44325 21.2519 8.2875 20.7557C7.13173 20.2596 6.12628 19.5839 5.27115 18.7288C4.41603 17.8737 3.7404 16.8682 3.24425 15.7125C2.74808 14.5567 2.5 13.3192 2.5 12C2.5 10.6808 2.74808 9.44328 3.24425 8.28753C3.7404 7.13176 4.41603 6.12631 5.27115 5.27118C6.12628 4.41606 7.13173 3.74043 8.2875 3.24428C9.44325 2.74811 10.6807 2.50003 12 2.50003C13.3192 2.50003 14.5567 2.74811 15.7125 3.24428C16.8682 3.74043 17.8737 4.41606 18.7288 5.27118C19.5839 6.12631 20.2596 7.13176 20.7557 8.28753C21.2519 9.44328 21.5 10.6808 21.5 12C21.5 13.3192 21.2519 14.5567 20.7557 15.7125C20.2596 16.8682 19.5839 17.8737 18.7288 18.7288C17.8737 19.5839 16.8682 20.2596 15.7125 20.7557C14.5567 21.2519 13.3192 21.5 12 21.5ZM12 20C12.9025 20 13.7727 19.8548 14.6105 19.5644C15.4484 19.274 16.1923 18.868 16.8423 18.3462C16.1923 17.8436 15.458 17.4519 14.6394 17.1712C13.8208 16.8904 12.941 16.75 12 16.75C11.0589 16.75 10.1775 16.8888 9.35573 17.1663C8.53393 17.4439 7.80123 17.8372 7.15765 18.3462C7.80765 18.868 8.55157 19.274 9.3894 19.5644C10.2272 19.8548 11.0974 20 12 20ZM12 11.25C12.4974 11.25 12.9134 11.0827 13.2481 10.7481C13.5827 10.4135 13.75 9.99744 13.75 9.50001C13.75 9.00257 13.5827 8.58654 13.2481 8.25191C12.9134 7.91729 12.4974 7.74998 12 7.74998C11.5025 7.74998 11.0865 7.91729 10.7519 8.25191C10.4173 8.58654 10.25 9.00257 10.25 9.50001C10.25 9.99744 10.4173 10.4135 10.7519 10.7481C11.0865 11.0827 11.5025 11.25 12 11.25Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                    <span class="px-2">User Management</span>
+                                </a>
+                            </div>
+                            <div class="empty">
+                                <a href="../../transactions/"
+                                    class="text-start active btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none">
+                                        <mask id="mask0_2700_6186"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse" x="0"
+                                            y="0" width="24" height="24">
+                                            <rect width="24" height="24"
+                                                fill="currentColor" />
+                                        </mask>
+                                        <g mask="url(#mask0_2700_6186)">
+                                            <path
+                                                d="M13.7495 12.7115C13.0508 12.7115 12.4594 12.4695 11.9755 11.9856C11.4915 11.5016 11.2495 10.9103 11.2495 10.2115C11.2495 9.51284 11.4915 8.92151 11.9755 8.43754C12.4594 7.95358 13.0508 7.71159 13.7495 7.71159C14.4482 7.71159 15.0395 7.95358 15.5235 8.43754C16.0074 8.92151 16.2494 9.51284 16.2494 10.2115C16.2494 10.9103 16.0074 11.5016 15.5235 11.9856C15.0395 12.4695 14.4482 12.7115 13.7495 12.7115ZM7.15333 15.8077C6.65623 15.8077 6.23067 15.6307 5.87665 15.2767C5.52265 14.9227 5.34565 14.4971 5.34565 14V6.42309C5.34565 5.92599 5.52265 5.50043 5.87665 5.14642C6.23067 4.79242 6.65623 4.61542 7.15333 4.61542H20.3456C20.8427 4.61542 21.2683 4.79242 21.6223 5.14642C21.9763 5.50043 22.1533 5.92599 22.1533 6.42309V14C22.1533 14.4971 21.9763 14.9227 21.6223 15.2767C21.2683 15.6307 20.8427 15.8077 20.3456 15.8077H7.15333ZM8.6533 14.3077H18.8456C18.8456 13.809 19.0226 13.383 19.3766 13.0298C19.7306 12.6766 20.1562 12.5 20.6533 12.5V7.92307C20.1546 7.92307 19.7286 7.74607 19.3754 7.39207C19.0222 7.03805 18.8456 6.61249 18.8456 6.11539H8.6533C8.6533 6.61411 8.4763 7.04007 8.1223 7.39327C7.76829 7.74647 7.34273 7.92307 6.84563 7.92307V12.5C7.34435 12.5 7.7703 12.677 8.1235 13.031C8.4767 13.385 8.6533 13.8106 8.6533 14.3077ZM19.1725 19.3076H3.65338C3.15626 19.3076 2.7307 19.1306 2.3767 18.7766C2.0227 18.4226 1.8457 17.9971 1.8457 17.5V7.59619H3.34565V17.5C3.34565 17.5769 3.37771 17.6474 3.44183 17.7115C3.50593 17.7756 3.57644 17.8077 3.65338 17.8077H19.1725V19.3076ZM7.15333 14.3077H6.84563V6.11539H7.15333C7.06999 6.11539 6.99788 6.14584 6.93698 6.20674C6.87608 6.26764 6.84563 6.33976 6.84563 6.42309V14C6.84563 14.0833 6.87608 14.1554 6.93698 14.2163C6.99788 14.2773 7.06999 14.3077 7.15333 14.3077Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                    <span class="px-2">Transactions</span>
+                                </a>
+                            </div>
+                            <div class="empty">
+                                <a href="../../analytics/"
+                                    class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none">
+                                        <mask id="mask0_2700_6192"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse" x="0"
+                                            y="0" width="24" height="24">
+                                            <rect width="24" height="24"
+                                                fill="#D9D9D9" />
+                                        </mask>
+                                        <g mask="url(#mask0_2700_6192)">
+                                            <path
+                                                d="M18.4423 18.7268V15.9615H17.5577V19.0846L19.65 21.1769L20.2731 20.5539L18.4423 18.7268ZM11.8461 4.08655L5.82495 7.56925L12 11.1385L18.175 7.56925L12.1538 4.08655C12.1025 4.0545 12.0513 4.03848 12 4.03848C11.9487 4.03848 11.8974 4.0545 11.8461 4.08655ZM3.5 15.7923V8.2077C3.5 7.8795 3.57909 7.57891 3.73727 7.30593C3.89544 7.03293 4.11763 6.81301 4.40385 6.64618L11.0961 2.79428C11.25 2.71094 11.3979 2.64909 11.5399 2.6087C11.6819 2.56832 11.8351 2.54813 11.9995 2.54813C12.1639 2.54813 12.3214 2.56832 12.4721 2.6087C12.6227 2.64909 12.7666 2.71094 12.9038 2.79428L19.5961 6.64618C19.8823 6.81301 20.1045 7.03293 20.2627 7.30593C20.4209 7.57891 20.5 7.8795 20.5 8.2077V11.9231H19V8.81153L11.975 12.8615L4.99997 8.81153V15.7769C4.99997 15.8282 5.0128 15.8763 5.03845 15.9212C5.06408 15.966 5.10254 16.0045 5.15383 16.0366L11.3077 19.6077V21.3211L4.40385 17.3538C4.11763 17.187 3.89544 16.9671 3.73727 16.6941C3.57909 16.4211 3.5 16.1205 3.5 15.7923ZM18 23.375C16.7513 23.375 15.6891 22.9371 14.8135 22.0615C13.9378 21.1859 13.5 20.1237 13.5 18.875C13.5 17.6263 13.9378 16.5641 14.8135 15.6885C15.6891 14.8128 16.7513 14.375 18 14.375C19.2487 14.375 20.3109 14.8128 21.1865 15.6885C22.0621 16.5641 22.5 17.6263 22.5 18.875C22.5 20.1237 22.0621 21.1859 21.1865 22.0615C20.3109 22.9371 19.2487 23.375 18 23.375Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                    <span class="px-2">Analytics</span>
+                                </a>
+                            </div>
+                        </div>
+                        <hr />
+                        <!-- second part -->
+                        <div class="ps-2">
+                            <div class="fs-6 pb-3">Admin & Staff</div>
+                            <div class="empty">
+                                <a href="../../support/"
+                                    class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none">
+                                        <mask id="mask0_2700_6204"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse" x="0"
+                                            y="0" width="24" height="24">
+                                            <rect width="24" height="24"
+                                                fill="currentColor" />
+                                        </mask>
+                                        <g mask="url(#mask0_2700_6204)">
+                                            <path
+                                                d="M11.3846 20.5V19H18.6923C18.7756 19 18.8477 18.9744 18.9086 18.9231C18.9695 18.8718 19 18.8045 19 18.7211V11.7269C19 9.81537 18.316 8.20608 16.9481 6.89903C15.5801 5.592 13.9307 4.93848 12 4.93848C10.0692 4.93848 8.41985 5.592 7.0519 6.89903C5.68395 8.20608 4.99998 9.81537 4.99998 11.7269V17.6154H4.25C3.77052 17.6154 3.35898 17.4484 3.0154 17.1144C2.6718 16.7804 2.5 16.3737 2.5 15.8942V13.9519C2.5 13.6276 2.59231 13.3304 2.77693 13.0606C2.96154 12.7907 3.20257 12.5737 3.5 12.4096L3.54618 11.1327C3.62821 10.0443 3.91089 9.03593 4.39423 8.10773C4.87756 7.17952 5.49743 6.3715 6.25383 5.68368C7.01024 4.99586 7.88332 4.45997 8.87305 4.07601C9.8628 3.69202 10.9051 3.50003 12 3.50003C13.0948 3.50003 14.1346 3.69202 15.1192 4.07601C16.1038 4.45997 16.9769 4.99331 17.7384 5.67601C18.5 6.35869 19.1198 7.16413 19.598 8.09233C20.0762 9.02053 20.3615 10.0289 20.4538 11.1173L20.5 12.3693C20.791 12.5064 21.0304 12.7026 21.2182 12.9577C21.406 13.2128 21.5 13.4974 21.5 13.8115V16.0442C21.5 16.3583 21.406 16.6429 21.2182 16.8981C21.0304 17.1532 20.791 17.3493 20.5 17.4865V18.7211C20.5 19.2134 20.3233 19.633 19.9701 19.9798C19.6169 20.3266 19.191 20.5 18.6923 20.5H11.3846ZM9.1923 13.7692C8.94743 13.7692 8.73878 13.6862 8.56635 13.5202C8.39392 13.3542 8.3077 13.1487 8.3077 12.9039C8.3077 12.659 8.39392 12.4519 8.56635 12.2827C8.73878 12.1135 8.94743 12.0289 9.1923 12.0289C9.43717 12.0289 9.64582 12.1135 9.81825 12.2827C9.99068 12.4519 10.0769 12.659 10.0769 12.9039C10.0769 13.1487 9.99068 13.3542 9.81825 13.5202C9.64582 13.6862 9.43717 13.7692 9.1923 13.7692ZM14.8077 13.7692C14.5628 13.7692 14.3541 13.6862 14.1817 13.5202C14.0093 13.3542 13.923 13.1487 13.923 12.9039C13.923 12.659 14.0093 12.4519 14.1817 12.2827C14.3541 12.1135 14.5628 12.0289 14.8077 12.0289C15.0525 12.0289 15.2612 12.1135 15.4336 12.2827C15.606 12.4519 15.6923 12.659 15.6923 12.9039C15.6923 13.1487 15.606 13.3542 15.4336 13.5202C15.2612 13.6862 15.0525 13.7692 14.8077 13.7692ZM6.37115 12.2C6.2673 10.5679 6.77499 9.17148 7.89423 8.01058C9.01346 6.8497 10.3987 6.26926 12.05 6.26926C13.4371 6.26926 14.6612 6.69842 15.7221 7.55676C16.783 8.41507 17.4269 9.52628 17.6538 10.8904C16.2333 10.8737 14.9208 10.5006 13.7163 9.77116C12.5118 9.04167 11.5872 8.04168 10.9423 6.77118C10.6885 8.01476 10.1564 9.11411 9.34615 10.0692C8.53588 11.0243 7.54422 11.7346 6.37115 12.2Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                    <span class="px-2">Support</span>
+                                </a>
+                            </div>
+                            <div class="empty">
+                                <a href="../../promotional-offers/"
+                                    class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none">
+                                        <mask id="mask0_2700_6210"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse" x="0"
+                                            y="0" width="24" height="24">
+                                            <rect width="24" height="24"
+                                                fill="currentColor" />
+                                        </mask>
+                                        <g mask="url(#mask0_2700_6210)">
+                                            <path
+                                                d="M4.11538 21.5V10.6153H2.5V5.40387H7.67118C7.53014 5.24106 7.4343 5.0577 7.38365 4.8538C7.33302 4.64991 7.3077 4.43583 7.3077 4.21155C7.3077 3.4637 7.56945 2.82802 8.09295 2.30452C8.61645 1.78102 9.25213 1.51927 9.99998 1.51927C10.3833 1.51927 10.7384 1.59972 11.0654 1.76062C11.3923 1.92152 11.6846 2.13659 11.9423 2.40582C12.2 2.12632 12.4923 1.90869 12.8192 1.75292C13.1461 1.59716 13.5012 1.51927 13.8846 1.51927C14.6324 1.51927 15.2681 1.78102 15.7916 2.30452C16.3151 2.82802 16.5769 3.4637 16.5769 4.21155C16.5769 4.43335 16.549 4.64425 16.4932 4.84425C16.4374 5.04425 16.3442 5.23079 16.2134 5.40387H21.5V10.6153H19.8846V21.5H4.11538ZM13.8846 3.01922C13.5468 3.01922 13.2636 3.13349 13.0351 3.36202C12.8065 3.59056 12.6923 3.87373 12.6923 4.21155C12.6923 4.54938 12.8065 4.83256 13.0351 5.06107C13.2636 5.28961 13.5468 5.40387 13.8846 5.40387C14.2224 5.40387 14.5056 5.28961 14.7341 5.06107C14.9626 4.83256 15.0769 4.54938 15.0769 4.21155C15.0769 3.87373 14.9626 3.59056 14.7341 3.36202C14.5056 3.13349 14.2224 3.01922 13.8846 3.01922ZM8.80765 4.21155C8.80765 4.54938 8.92192 4.83256 9.15045 5.06107C9.37898 5.28961 9.66216 5.40387 9.99998 5.40387C10.3378 5.40387 10.621 5.28961 10.8495 5.06107C11.078 4.83256 11.1923 4.54938 11.1923 4.21155C11.1923 3.87373 11.078 3.59056 10.8495 3.36202C10.621 3.13349 10.3378 3.01922 9.99998 3.01922C9.66216 3.01922 9.37898 3.13349 9.15045 3.36202C8.92192 3.59056 8.80765 3.87373 8.80765 4.21155ZM3.99998 6.90385V9.1154H11.25V6.90385H3.99998ZM11.25 20V10.6153H5.61533V20H11.25ZM12.75 20H18.3846V10.6153H12.75V20ZM20 9.1154V6.90385H12.75V9.1154H20Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                    <span class="px-2">Promotional Offers</span>
+                                </a>
+                            </div>
+                            <div class="empty">
+                                <a href="../../transactions/"
+                                    class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none">
+                                        <mask id="mask0_2608_5690"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse" x="0"
+                                            y="0" width="24" height="24">
+                                            <rect width="24" height="24"
+                                                fill="currentColor" />
+                                        </mask>
+                                        <g mask="url(#mask0_2608_5690)">
+                                            <path
+                                                d="M4.5 18.8846V17.3846H6.3077V9.92305C6.3077 8.57818 6.72276 7.38908 7.55287 6.35575C8.38301 5.32242 9.44872 4.66153 10.75 4.37308V3.75C10.75 3.40278 10.8714 3.10765 11.1143 2.8646C11.3571 2.62153 11.6519 2.5 11.9988 2.5C12.3457 2.5 12.641 2.62153 12.8846 2.8646C13.1282 3.10765 13.25 3.40278 13.25 3.75V4.37308C14.5512 4.66153 15.6169 5.32242 16.4471 6.35575C17.2772 7.38908 17.6922 8.57818 17.6922 9.92305V17.3846H19.5V18.8846H4.5ZM11.9983 21.6923C11.5007 21.6923 11.0753 21.5153 10.7221 21.1613C10.3689 20.8073 10.1923 20.3817 10.1923 19.8846H13.8077C13.8077 20.3833 13.6305 20.8093 13.2761 21.1625C12.9218 21.5157 12.4959 21.6923 11.9983 21.6923ZM7.80765 17.3846H16.1923V9.92305C16.1923 8.76535 15.783 7.77721 14.9644 6.95863C14.1458 6.14003 13.1577 5.73073 12 5.73073C10.8423 5.73073 9.85413 6.14003 9.03555 6.95863C8.21695 7.77721 7.80765 8.76535 7.80765 9.92305V17.3846Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                    <span class="px-2">Push Notification</span>
+                                </a>
+                            </div>
+                            <div class="empty">
+                                <a href="/"
+                                    class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none">
+                                        <mask id="mask0_2608_5696"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse" x="0"
+                                            y="0" width="24" height="24">
+                                            <rect width="24" height="24"
+                                                fill="#D9D9D9" />
+                                        </mask>
+                                        <g mask="url(#mask0_2608_5696)">
+                                            <path
+                                                d="M12 11.6923C11.0375 11.6923 10.2135 11.3496 9.52813 10.6642C8.84271 9.97879 8.5 9.15484 8.5 8.19236C8.5 7.22986 8.84271 6.40591 9.52813 5.72051C10.2135 5.03509 11.0375 4.69238 12 4.69238C12.9625 4.69238 13.7864 5.03509 14.4718 5.72051C15.1572 6.40591 15.5 7.22986 15.5 8.19236C15.5 9.15484 15.1572 9.97879 14.4718 10.6642C13.7864 11.3496 12.9625 11.6923 12 11.6923ZM4.5 19.3077V17.0846C4.5 16.5898 4.63206 16.135 4.89617 15.7203C5.16027 15.3055 5.51667 14.986 5.96537 14.7616C6.91409 14.3001 7.89451 13.9424 8.90662 13.6885C9.91874 13.4347 10.9505 13.3078 12.0018 13.3078C13.0532 13.3078 14.0843 13.4347 15.0951 13.6885C16.1061 13.9424 17.0859 14.3001 18.0346 14.7616C18.4833 14.986 18.8397 15.3055 19.1038 15.7203C19.3679 16.135 19.5 16.5898 19.5 17.0846V19.3077H4.5ZM12 10.1924C12.55 10.1924 13.0208 9.99653 13.4125 9.60486C13.8041 9.21319 14 8.74236 14 8.19236C14 7.64236 13.8041 7.17153 13.4125 6.77986C13.0208 6.38819 12.55 6.19236 12 6.19236C11.45 6.19236 10.9791 6.38819 10.5875 6.77986C10.1958 7.17153 9.99997 7.64236 9.99997 8.19236C9.99997 8.74236 10.1958 9.21319 10.5875 9.60486C10.9791 9.99653 11.45 10.1924 12 10.1924ZM15.7115 15.4212V17.8077H18V17.0846C18 16.8693 17.9391 16.6769 17.8173 16.5077C17.6955 16.3385 17.5384 16.2026 17.3461 16.1C17.0871 15.9603 16.8189 15.8346 16.5413 15.7231C16.2637 15.6116 15.9871 15.5109 15.7115 15.4212ZM9.78842 15.0308V16.3077H14.2115V15.0308C13.8461 14.9513 13.4784 14.8942 13.1082 14.8596C12.738 14.825 12.3678 14.8077 11.9976 14.8077C11.6274 14.8077 11.258 14.825 10.8894 14.8596C10.5208 14.8942 10.1538 14.9513 9.78842 15.0308ZM5.99997 17.8077H8.28845V15.4212C8.01282 15.5109 7.73622 15.6116 7.45865 15.7231C7.18108 15.8346 6.91281 15.9603 6.65382 16.1C6.46152 16.2026 6.30447 16.3385 6.18267 16.5077C6.06087 16.6769 5.99997 16.8693 5.99997 17.0846V17.8077Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                    <span class="px-2">Staff Management</span>
+                                </a>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="empty pb-5">
+                            <button
+                                class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover"
+                                data-bs-toggle="modal" data-bs-target="#logout">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <mask id="mask0_2608_5717"
+                                        style="mask-type: alpha"
+                                        maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="24" height="24">
+                                        <rect width="24" height="24"
+                                            fill="currentColor" />
+                                    </mask>
+                                    <g mask="url(#mask0_2608_5717)">
+                                        <path
+                                            d="M12 21C10.75 21 9.57917 20.7625 8.4875 20.2875C7.39583 19.8125 6.44583 19.1708 5.6375 18.3625C4.82917 17.5542 4.1875 16.6042 3.7125 15.5125C3.2375 14.4208 3 13.25 3 12C3 10.75 3.2375 9.57917 3.7125 8.4875C4.1875 7.39583 4.82917 6.44583 5.6375 5.6375C6.44583 4.82917 7.39583 4.1875 8.4875 3.7125C9.57917 3.2375 10.75 3 12 3V5C10.05 5 8.39583 5.67917 7.0375 7.0375C5.67917 8.39583 5 10.05 5 12C5 13.95 5.67917 15.6042 7.0375 16.9625C8.39583 18.3208 10.05 19 12 19V21ZM16 17L14.6 15.575L17.175 13H9V11H17.175L14.6 8.4L16 7L21 12L16 17Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                                <span class="px-2">Log Out</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- main dashboard -->
+                    <div class="col-9 overflow-auto vh-100">
+                        <div class="container">
+                            <div class="row">
+                                <!-- dashboard header  -->
+                                <div class="col-12 sticky-top py-3 bg-fff">
+                                    <div class="row">
+                                        <div class="col-6 bg-search">
+                                            <div
+                                                class="input-group input-group-sm">
+                                                <span class="input-group-text"
+                                                    id="basic-addon1"><svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16"
+                                                        viewBox="0 0 16 16"
+                                                        fill="none">
+                                                        <circle cx="6.6001"
+                                                            cy="6.59998" r="6"
+                                                            stroke="#36474F"
+                                                            stroke-width="1.2" />
+                                                        <path
+                                                            d="M11 11L15.2426 15.2426"
+                                                            stroke="#36474F"
+                                                            stroke-width="1.2"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg></span>
+                                                <input type="text"
+                                                    class="form-control form-control-sm"
+                                                    placeholder="Search"
+                                                    aria-label="Search"
+                                                    aria-describedby="basic-addon1" />
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-6 d-flex justify-content-end">
+                                            <div
+                                                class="px-1 badge bg-primary badge-width fs-6 d-flex align-items-center justify-content-center p-1 fw-bold">
+                                                L
+                                            </div>
+                                            <div class="px-3 d-block">
+                                                <div
+                                                    class="fs-7 fw-bold">Lawrence</div>
+                                                <div
+                                                    class="text-neutral fs-10">Administrator</div>
+                                            </div>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="32" height="32"
+                                                viewBox="0 0 32 32" fill="none">
+                                                <mask id="mask0_2579_2785"
+                                                    style="mask-type: alpha"
+                                                    maskUnits="userSpaceOnUse"
+                                                    x="0" y="0" width="32"
+                                                    height="32">
+                                                    <rect width="32" height="32"
+                                                        fill="#D9D9D9" />
+                                                </mask>
+                                                <g mask="url(#mask0_2579_2785)">
+                                                    <path
+                                                        d="M16 20.4995L8 12.4995L9.86667 10.6328L16 16.7661L22.1333 10.6328L24 12.4995L16 20.4995Z"
+                                                        fill="#121212" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 py-3"></div>
+                                <!-- content of main dashboard -->
+                                <div class="bg-search overflow">
+                                    <div
+                                        class="col-12 d-flex bg-search justify-content-between">
+                                        <div class="px-3 d-block">
+                                            <div
+                                                class="fs-5 fw-bold">Transactions</div>
+                                            <div class="text-neutral fs-9">Wed
+                                                7th March, 2024</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row px-2 py-4">
+                                            <div class="col-6">
+                                                <div class="btn-group rounded-1"
+                                                    role="group"
+                                                    aria-label="Basic mixed styles example">
+                                                    <a href="./" type="button"
+                                                        class="btn btn-success">Pending</a>
+                                                    <a href="../" type="button"
+                                                        class="btn btn-outline-primary">Resolved/Approved</a>
+                                                    <a href="../rejected/" type="button"
+                                                        class="btn btn-outline-primary">Rejected</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6"></div>
+
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-12">
+                                        <div
+                                            class="d-flex justify-content-between">
+                                            <div class="fs-7 fw-bold">Analytics</div>
+                                            <div>
+                                                <input
+                                                    class="form-control form-control-sm "
+                                                    name="eventDateTime"
+                                                    id="eventDateTime"
+                                                    title="date" type="date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 fs-8">
+                                        <span class="fs-6 px-1 fw-bold"
+                                            id="displayedTransactions">49</span>transactions
+                                        approved <span
+                                            class="fw-bold fs-6">/</span> <span
+                                            class="fw-bold px-1 fs-6"
+                                            id="total-transactions">50</span>
+                                        transactions assigned
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="progress-stacked">
+                                            <div class="progress"
+                                                role="progressbar"
+                                                aria-label="Segment one"
+                                                style="width: 5%">
+                                                <div class="progress-bar bg-red"></div>
+                                            </div>
+                                            <div class="progress"
+                                                role="progressbar"
+                                                aria-label="Segment two"
+                                                aria-valuenow="30"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                                style="width: 80%">
+                                                <div
+                                                    class="progress-bar bg-primary"></div>
+                                            </div>
+                                            <div class="progress"
+                                                role="progressbar"
+                                                aria-label="Segment three"
+                                                aria-valuenow="20"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                                style="width: 20%">
+                                                <div class="progress-bar bg-yellow"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3"></div>
+                                    <div class="col-6">
+                                        <div class="text-uppercase"></div>
+                                    </div>
+                                    <div class="col-12 d-flex py-3 gap-2">
+                                        <div class="d-flex align-items-center gap-1 fs-8 fw-bold"><div class="yellow-box"></div> Transaction Pending</div>
+                                        <div class="d-flex align-items-center gap-1 fs-8 fw-bold"><div class="purple-box"></div> Transaction Successful</div>
+                                        <div class="d-flex align-items-center gap-1 fs-8 fw-bold"><div class="red-box"></div> Transaction Failed</div>                                        
+                                    </div>
+                                    <div class="col-12 py-3 fs-7 fw-bold">
+                                        Transaction Details
+                                    </div>
+                                    <!-- tables  -->
+                                    <table class="table fs-8 table-striped">
+                                        <thead>
+                                            <tr>
+                                              <th scope="col">No</th>
+                                              <th scope="col">User</th>
+                                              <th scope="col">Date Created</th>
+                                              <th scope="col">Bank Details</th>
+                                              <th scope="col">Account Name</th>
+                                              <th scope="col">Fulfiled</th>
+                                              <th scope="col">Fulfiled By</th>
+                                              <th scope="col">Time fulfiled</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <th scope="row">1</th>
+                                              <td>Lawrence Obazee</td>
+                                              <td>Dec. 20,2023. 11:34pm</td>
+                                              <td>0014(0212243711)</td>
+                                              <td>Olaolu Adedeji</td>
+                                              <td class="text-yellow">Pending</td>
+                                              <td>Lawrence Obazee</td>
+                                              <td>Dec. 20,2023. 11:36pm</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">2</th>
+                                              <td>Lawrence Obazee</td>
+                                              <td>Dec. 20,2023. 11:34pm</td>
+                                              <td>0014(0212243711)</td>
+                                              <td>Olaolu Adedeji</td>
+                                              <td class="text-yellow">Pending</td>
+                                              <td>Lawrence Obazee</td>
+                                              <td>Dec. 20,2023. 11:36pm</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">3</th>
+                                              <td>Lawrence Obazee</td>
+                                              <td>Dec. 20,2023. 11:34pm</td>
+                                              <td>0014(0212243711)</td>
+                                              <td>Olaolu Adedeji</td>
+                                              <td class="text-yellow">Pending</td>
+                                              <td>Lawrence Obazee</td>
+                                              <td>Dec. 20,2023. 11:36pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:34pm</td>
+                                                <td>0014(0212243711)</td>
+                                                <td>Olaolu Adedeji</td>
+                                                <td class="text-yellow">Pending</td>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:36pm</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">5</th>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:34pm</td>
+                                                <td>0014(0212243711)</td>
+                                                <td>Olaolu Adedeji</td>
+                                                <td class="text-yellow">Pending</td>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:36pm</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">6</th>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:34pm</td>
+                                                <td>0014(0212243711)</td>
+                                                <td>Olaolu Adedeji</td>
+                                                <td class="text-yellow">Pending</td>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:36pm</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">7</th>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:34pm</td>
+                                                <td>0014(0212243711)</td>
+                                                <td>Olaolu Adedeji</td>
+                                                <td class="text-yellow">Pending</td>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:36pm</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">8</th>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:34pm</td>
+                                                <td>0014(0212243711)</td>
+                                                <td>Olaolu Adedeji</td>
+                                                <td class="text-yellow">Pending</td>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:36pm</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">9</th>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:34pm</td>
+                                                <td>0014(0212243711)</td>
+                                                <td>Olaolu Adedeji</td>
+                                                <td class="text-yellow">Pending</td>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:36pm</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">10</th>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:34pm</td>
+                                                <td>0014(0212243711)</td>
+                                                <td>Olaolu Adedeji</td>
+                                                <td class="text-yellow">Pending</td>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:36pm</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">11</th>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:34pm</td>
+                                                <td>0014(0212243711)</td>
+                                                <td>Olaolu Adedeji</td>
+                                                <td class="text-yellow">Pending</td>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:36pm</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">12</th>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:34pm</td>
+                                                <td>0014(0212243711)</td>
+                                                <td>Olaolu Adedeji</td>
+                                                <td class="text-yellow">Pending</td>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:36pm</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">13</th>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:34pm</td>
+                                                <td>0014(0212243711)</td>
+                                                <td>Olaolu Adedeji</td>
+                                                <td class="text-yellow">Pending</td>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:36pm</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">14</th>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:34pm</td>
+                                                <td>0014(0212243711)</td>
+                                                <td>Olaolu Adedeji</td>
+                                                <td class="text-yellow">Pending</td>
+                                                <td>Lawrence Obazee</td>
+                                                <td>Dec. 20,2023. 11:36pm</td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- logout  -->
+                        <div class="modal fade" id="logout" tabindex="-1"
+                            data-bs-backdrop="static" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content py-3">
+                                    <div
+                                        class="container pb-2 pt-4 text-purple text-center">
+                                        <div class="fs-5 fw-bold">Log Out?</div>
+                                        <div class="fs-7">are you sure you want
+                                            to log out?</div>
+                                    </div>
+                                    <hr />
+                                    <div
+                                        class="d-flex justify-content-evenly py-3">
+                                        <button type="button"
+                                            class="btn text-purple btn-shadows fs-7 btn-light"
+                                            data-bs-dismiss="modal">
+                                            Cancel
+                                        </button>
+                                        <button type="button"
+                                            class="btn text-purple btn-shadows fs-7 btn-light">
+                                            Log Out
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="/js/bootstrap.js"></script>
+        <script src="/js/jquery.min.js"></script>
+    </body>
+
+</html>

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard - Home</title>
     <link rel="stylesheet" href="/css/bootstrap.css" />
-    <!-- <link rel="stylesheet" href="/css/bootstrap.css.map"> -->
+    <link rel="stylesheet" href="/css/bootstrap.css.map" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
@@ -26,10 +26,10 @@
     <main class="d-none d-md-block">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-3 text-light bg-primary vh-100">
+                <div class="col-3 text-light overflow-auto bg-primary vh-100">
                     <div class="ps-2">
                         <div class="py-4 pe-5">
-                            <img src="/img/icon/Fastswipe.svg" width="125px" class="img-fluid" alt="" srcset="" />
+                            <img src="/img/icon/Fastswipe.svg" width="125px" class="img-fluid" alt srcset />
                         </div>
                         <div class="fs-6 pb-3">General</div>
                         <div class="empty">
@@ -105,7 +105,7 @@
                             </a>
                         </div>
                     </div>
-                    <hr>
+                    <hr />
                     <!-- second part -->
                     <div class="ps-2">
                         <div class="fs-6 pb-3">Admin & Staff</div>
@@ -114,7 +114,7 @@
                                 class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
-                                    <mask id="mask0_2700_6204" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                    <mask id="mask0_2700_6204" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0"
                                         y="0" width="24" height="24">
                                         <rect width="24" height="24" fill="currentColor" />
                                     </mask>
@@ -132,7 +132,7 @@
                                 class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
-                                    <mask id="mask0_2700_6210" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                    <mask id="mask0_2700_6210" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0"
                                         y="0" width="24" height="24">
                                         <rect width="24" height="24" fill="currentColor" />
                                     </mask>
@@ -150,7 +150,7 @@
                                 class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
-                                    <mask id="mask0_2608_5690" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                    <mask id="mask0_2608_5690" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0"
                                         y="0" width="24" height="24">
                                         <rect width="24" height="24" fill="currentColor" />
                                     </mask>
@@ -168,7 +168,7 @@
                                 class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
-                                    <mask id="mask0_2608_5696" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                    <mask id="mask0_2608_5696" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0"
                                         y="0" width="24" height="24">
                                         <rect width="24" height="24" fill="#D9D9D9" />
                                     </mask>
@@ -182,14 +182,14 @@
                             </a>
                         </div>
                     </div>
-                    <hr>
-                    <div class="empty">
+                    <hr />
+                    <div class="empty pb-5">
                         <button
                             class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover"
                             data-bs-toggle="modal" data-bs-target="#logout">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none">
-                                <mask id="mask0_2608_5717" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                <mask id="mask0_2608_5717" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0"
                                     y="0" width="24" height="24">
                                     <rect width="24" height="24" fill="currentColor" />
                                 </mask>
@@ -203,41 +203,281 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-9">
+                <!-- main dashboard -->
+                <div class="col-9 overflow-auto vh-100">
                     <div class="container">
-                        <div class="row pt-3">
-                            <div class="col-6">
-                                <div class="input-group input-group-sm bg-search">
-                                    <span class="input-group-text" id="basic-addon1"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none">
-                                            <circle cx="6.6001" cy="6.59998" r="6" stroke="#36474F"
-                                                stroke-width="1.2" />
-                                            <path d="M11 11L15.2426 15.2426" stroke="#36474F" stroke-width="1.2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg></span>
-                                    <input type="text" class="form-control py-3 form-control-sm" placeholder="Search" aria-label="Search"
-                                        aria-describedby="basic-addon1">
+                        <div class="row">
+                            <!-- dashboard header  -->
+                            <div class="col-12 sticky-top py-3 bg-fff">
+                                <div class="row">
+                                    <div class="col-6 bg-search">
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-text" id="basic-addon1"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <circle cx="6.6001" cy="6.59998" r="6" stroke="#36474F"
+                                                        stroke-width="1.2" />
+                                                    <path d="M11 11L15.2426 15.2426" stroke="#36474F" stroke-width="1.2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg></span>
+                                            <input type="text" class="form-control form-control-sm" placeholder="Search"
+                                                aria-label="Search" aria-describedby="basic-addon1" />
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end">
+                                        <div
+                                            class="px-1 badge bg-primary badge-width fs-6 d-flex align-items-center justify-content-center p-1 fw-bold">
+                                            L
+                                        </div>
+                                        <div class="px-3 d-block">
+                                            <div class="fs-7 fw-bold">Lawrence</div>
+                                            <div class="text-neutral fs-10">Administrator</div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <mask id="mask0_2579_2785" style="mask-type: alpha"
+                                                maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect width="32" height="32" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_2579_2785)">
+                                                <path
+                                                    d="M16 20.4995L8 12.4995L9.86667 10.6328L16 16.7661L22.1333 10.6328L24 12.4995L16 20.4995Z"
+                                                    fill="#121212" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 py-3"></div>
+                            <!-- content of main dashboard -->
+                            <div class="bg-search overflow">
+                                <div class="col-12 d-flex bg-search justify-content-between">
+                                    <div class="px-3 d-block">
+                                        <div class="fs-5 fw-bold">Dashboard</div>
+                                        <div class="text-neutral fs-9">Wed 7th March, 2024</div>
+                                    </div>
+                                    <button href
+                                        class="btn d-flex align-items-center text-capitalize justify-content-center btn-sm btn-primary"
+                                        data-bs-toggle="modal" data-bs-target="#addnewstaff">
+                                        add new staff
+                                    </button>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row px-2 py-4">
+                                        <div class="col-4 rounded-3 px-3 py-3 bg-white">
+                                            <div class="svg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                    viewBox="0 0 88 88" fill="none">
+                                                    <rect width="88" height="88" rx="44" fill="#E6ECEC" />
+                                                    <mask id="mask0_2579_2876" style="mask-type: alpha"
+                                                        maskUnits="userSpaceOnUse" x="16" y="16" width="56" height="56">
+                                                        <rect x="16" y="16" width="56" height="56" fill="#D9D9D9" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_2579_2876)">
+                                                        <path
+                                                            d="M30.054 56.3488C32.0373 54.877 34.1979 53.7148 36.5357 52.8622C38.8735 52.0097 41.3616 51.5834 44.0001 51.5834C46.6386 51.5834 49.1267 52.0097 51.4645 52.8622C53.8023 53.7148 55.9629 54.877 57.9462 56.3488C59.3971 54.7543 60.5466 52.9086 61.3946 50.8116C62.2427 48.7146 62.6668 46.444 62.6668 44C62.6668 38.8278 60.8487 34.4236 57.2126 30.7875C53.5765 27.1514 49.1723 25.3333 44.0001 25.3333C38.8279 25.3333 34.4237 27.1514 30.7876 30.7875C27.1515 34.4236 25.3334 38.8278 25.3334 44C25.3334 46.444 25.7575 48.7146 26.6056 50.8116C27.4537 52.9086 28.6031 54.7543 30.054 56.3488ZM44.0008 45.75C41.8704 45.75 40.0738 45.0188 38.611 43.5564C37.1482 42.0941 36.4168 40.2977 36.4168 38.1674C36.4168 36.037 37.148 34.2404 38.6103 32.7776C40.0727 31.3148 41.8691 30.5834 43.9994 30.5834C46.1298 30.5834 47.9264 31.3146 49.3892 32.7769C50.852 34.2393 51.5834 36.0356 51.5834 38.166C51.5834 40.2964 50.8522 42.0929 49.3899 43.5557C47.9275 45.0186 46.1311 45.75 44.0008 45.75ZM44.0001 66.1666C40.9219 66.1666 38.0344 65.5878 35.3377 64.43C32.6409 63.2724 30.2948 61.6959 28.2995 59.7006C26.3042 57.7053 24.7278 55.3592 23.5701 52.6625C22.4124 49.9657 21.8335 47.0782 21.8335 44C21.8335 40.9218 22.4124 38.0343 23.5701 35.3376C24.7278 32.6408 26.3042 30.2947 28.2995 28.2994C30.2948 26.3041 32.6409 24.7277 35.3377 23.57C38.0344 22.4123 40.9219 21.8334 44.0001 21.8334C47.0783 21.8334 49.9658 22.4123 52.6625 23.57C55.3593 24.7277 57.7054 26.3041 59.7007 28.2994C61.696 30.2947 63.2725 32.6408 64.4301 35.3376C65.5879 38.0343 66.1667 40.9218 66.1667 44C66.1667 47.0782 65.5879 49.9657 64.4301 52.6625C63.2725 55.3592 61.696 57.7053 59.7007 59.7006C57.7054 61.6959 55.3593 63.2724 52.6625 64.43C49.9658 65.5878 47.0783 66.1666 44.0001 66.1666ZM44.0001 62.6667C46.1061 62.6667 48.1365 62.3279 50.0914 61.6503C52.0464 60.9728 53.7822 60.0252 55.2989 58.8077C53.7822 57.635 52.0688 56.7212 50.1588 56.066C48.2487 55.4109 46.1958 55.0833 44.0001 55.0833C41.8044 55.0833 39.7477 55.4071 37.8302 56.0548C35.9127 56.7024 34.203 57.6201 32.7013 58.8077C34.218 60.0252 35.9538 60.9728 37.9088 61.6503C39.8637 62.3279 41.8941 62.6667 44.0001 62.6667ZM44.0001 42.2501C45.1608 42.2501 46.1315 41.8597 46.9123 41.0789C47.6931 40.2981 48.0835 39.3274 48.0835 38.1667C48.0835 37.006 47.6931 36.0353 46.9123 35.2544C46.1315 34.4737 45.1608 34.0833 44.0001 34.0833C42.8394 34.0833 41.8687 34.4737 41.0879 35.2544C40.3071 36.0353 39.9167 37.006 39.9167 38.1667C39.9167 39.3274 40.3071 40.2981 41.0879 41.0789C41.8687 41.8597 42.8394 42.2501 44.0001 42.2501Z"
+                                                            fill="#023F40" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="text-capitalize fs-9">total users</div>
+                                            <div class="fw-bold fs-6">200,000</div>
+                                        </div>
+                                        <!-- first done -->
+                                        <div class="col-4 rounded-3 px-3 py-3 bg-white">
+                                            <div class="svg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                    viewBox="0 0 88 88" fill="none">
+                                                    <rect width="88" height="88" rx="44" fill="#E6ECEC" />
+                                                    <mask id="mask0_2579_2887" style="mask-type: alpha"
+                                                        maskUnits="userSpaceOnUse" x="16" y="16" width="56" height="56">
+                                                        <rect x="16" y="16" width="56" height="56" fill="#D9D9D9" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_2579_2887)">
+                                                        <path
+                                                            d="M28.3847 63.8333C27.221 63.8333 26.2271 63.4212 25.403 62.597C24.5788 61.7729 24.1667 60.779 24.1667 59.6153V28.3847C24.1667 27.221 24.5788 26.2271 25.403 25.403C26.2271 24.5788 27.221 24.1667 28.3847 24.1667H59.6153C60.779 24.1667 61.7729 24.5788 62.597 25.403C63.4212 26.2271 63.8333 27.221 63.8333 28.3847V34.734H60.3334V28.3847C60.3334 28.1753 60.266 28.0032 60.1314 27.8686C59.9968 27.734 59.8247 27.6667 59.6153 27.6667H28.3847C28.1753 27.6667 28.0033 27.734 27.8686 27.8686C27.734 28.0032 27.6667 28.1753 27.6667 28.3847V59.6153C27.6667 59.8247 27.734 59.9967 27.8686 60.1314C28.0033 60.266 28.1753 60.3333 28.3847 60.3333H59.6153C59.8247 60.3333 59.9968 60.266 60.1314 60.1314C60.266 59.9967 60.3334 59.8247 60.3334 59.6153V53.266H63.8333V59.6153C63.8333 60.779 63.4212 61.7729 62.597 62.597C61.7729 63.4212 60.779 63.8333 59.6153 63.8333H28.3847ZM47.0514 54.4999C45.8877 54.4999 44.8938 54.0879 44.0697 53.2637C43.2455 52.4395 42.8334 51.4456 42.8334 50.282V37.718C42.8334 36.5543 43.2455 35.5604 44.0697 34.7363C44.8938 33.9121 45.8877 33.5001 47.0514 33.5001H61.9487C63.1123 33.5001 64.1062 33.9121 64.9304 34.7363C65.7545 35.5604 66.1666 36.5543 66.1666 37.718V50.282C66.1666 51.4456 65.7545 52.4395 64.9304 53.2637C64.1062 54.0879 63.1123 54.4999 61.9487 54.4999H47.0514ZM61.9487 51C62.1581 51 62.3301 50.9327 62.4647 50.798C62.5994 50.6634 62.6667 50.4914 62.6667 50.282V37.718C62.6667 37.5086 62.5994 37.3366 62.4647 37.2019C62.3301 37.0673 62.1581 37 61.9487 37H47.0514C46.842 37 46.6699 37.0673 46.5353 37.2019C46.4007 37.3366 46.3334 37.5086 46.3334 37.718V50.282C46.3334 50.4914 46.4007 50.6634 46.5353 50.798C46.6699 50.9327 46.842 51 47.0514 51H61.9487ZM53.3334 47.5C54.3056 47.5 55.132 47.1597 55.8125 46.4792C56.4931 45.7986 56.8334 44.9722 56.8334 44C56.8334 43.0278 56.4931 42.2014 55.8125 41.5208C55.132 40.8403 54.3056 40.5 53.3334 40.5C52.3611 40.5 51.5347 40.8403 50.8542 41.5208C50.1736 42.2014 49.8334 43.0278 49.8334 44C49.8334 44.9722 50.1736 45.7986 50.8542 46.4792C51.5347 47.1597 52.3611 47.5 53.3334 47.5Z"
+                                                            fill="#023F40" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="text-capitalize fs-9">
+                                                overall wallet sum
+                                            </div>
+                                            <div class="fw-bold fs-6 text-break">
+                                                ₦200,000,108.79
+                                            </div>
+                                        </div>
+                                        <!-- second  -->
+                                        <div class="col-4 rounded-3 px-3 py-3 bg-white">
+                                            <div class="svg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                    viewBox="0 0 88 88" fill="none">
+                                                    <rect width="88" height="88" rx="44" fill="#E6ECEC" />
+                                                    <mask id="mask0_2579_2898" style="mask-type: alpha"
+                                                        maskUnits="userSpaceOnUse" x="16" y="16" width="56" height="56">
+                                                        <rect x="16" y="16" width="56" height="56" fill="#D9D9D9" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_2579_2898)">
+                                                        <path
+                                                            d="M30 66.1666C28.3697 66.1666 26.9899 65.602 25.8606 64.4727C24.7314 63.3434 24.1667 61.9636 24.1667 60.3334V53.6026H31.1667V21.8334H63.8333V60.3334C63.8333 61.9636 63.2687 63.3434 62.1394 64.4727C61.0101 65.602 59.6303 66.1666 58 66.1666H30ZM58 62.6667C58.6611 62.6667 59.2153 62.4431 59.6625 61.9958C60.1097 61.5486 60.3334 60.9945 60.3334 60.3334V25.3333H34.6667V53.6026H55.6667V60.3334C55.6667 60.9945 55.8903 61.5486 56.3375 61.9958C56.7847 62.4431 57.3389 62.6667 58 62.6667ZM37.4488 36.282V32.7821H57.5513V36.282H37.4488ZM37.4488 43.0128V39.5128H57.5513V43.0128H37.4488ZM30 62.6667H52.1667V57.1025H27.6667V60.3334C27.6667 60.9945 27.8903 61.5486 28.3375 61.9958C28.7847 62.4431 29.3389 62.6667 30 62.6667ZM30 62.6667H27.6667H52.1667H30Z"
+                                                            fill="#023F40" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="text-capitalize fs-9">
+                                                all time transaction volume
+                                            </div>
+                                            <div class="fw-bold fs-6 text-break">
+                                                ₦1,000,000,108.79
+                                            </div>
+                                        </div>
+                                        <!-- third done  -->
+                                        <div class="col-4 rounded-3 px-3 py-3 bg-white">
+                                            <div class="svg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                    viewBox="0 0 88 88" fill="none">
+                                                    <rect width="88" height="88" rx="44" fill="#E6ECEC" />
+                                                    <mask id="mask0_2579_2910" style="mask-type: alpha"
+                                                        maskUnits="userSpaceOnUse" x="16" y="16" width="56" height="56">
+                                                        <rect x="16" y="16" width="56" height="56" fill="#D9D9D9" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_2579_2910)">
+                                                        <path
+                                                            d="M44.0001 66.1666C40.9369 66.1666 38.0569 65.584 35.3601 64.4188C32.6633 63.2537 30.3172 61.6675 28.322 59.6602C26.3267 57.6529 24.7464 55.3009 23.5813 52.6041C22.4161 49.9074 21.8335 47.0393 21.8335 44C21.8335 38.2834 23.7174 33.3325 27.4851 29.1475C31.2528 24.9625 35.98 22.5633 41.6668 21.9501V26.8858C37.3321 27.4751 33.7656 29.3934 30.967 32.6407C28.1685 35.8879 26.7693 39.6744 26.7693 44C26.7693 48.7654 28.4497 52.8286 31.8107 56.1895C35.1715 59.5504 39.2347 61.2309 44.0001 61.2309C46.7463 61.2309 49.3197 60.634 51.7203 59.4404C54.121 58.2468 56.0946 56.6569 57.6412 54.6706L61.9129 57.1833C59.8577 59.9653 57.2746 62.158 54.1635 63.7615C51.0524 65.3649 47.6646 66.1666 44.0001 66.1666ZM64.318 52.8666L60.0463 50.3988C60.4262 49.4804 60.7186 48.4768 60.9235 47.3878C61.1285 46.2989 61.231 45.1697 61.231 44C61.231 39.6295 59.8167 35.8243 56.9883 32.5846C54.1599 29.3448 50.6083 27.4452 46.3334 26.8858V21.9501C51.9155 22.4886 56.6165 24.8615 60.4366 29.0689C64.2567 33.2764 66.1667 38.2534 66.1667 44C66.1667 45.6214 66.0186 47.1806 65.7224 48.6779C65.4263 50.1751 64.9581 51.5713 64.318 52.8666Z"
+                                                            fill="#023F40" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="text-capitalize fs-9">
+                                                all time processed transaction
+                                            </div>
+                                            <div class="fw-bold fs-6 text-break">500,000</div>
+                                        </div>
+                                        <!-- fourth done  -->
+                                        <div class="col-4 rounded-3 px-3 py-3 bg-white">
+                                            <div class="svg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                    viewBox="0 0 88 88" fill="none">
+                                                    <rect width="88" height="88" rx="44" fill="#E6ECEC" />
+                                                    <mask id="mask0_2579_2921" style="mask-type: alpha"
+                                                        maskUnits="userSpaceOnUse" x="15" y="15" width="57" height="57">
+                                                        <rect x="15.8113" y="15.8123" width="56" height="56"
+                                                            fill="#D9D9D9" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_2579_2921)">
+                                                        <path
+                                                            d="M42.0613 26.3124V54.6085L28.7702 41.3175L26.3113 43.8123L43.8112 61.3122L61.3112 43.8123L58.8522 41.3175L45.5612 54.6085V26.3124H42.0613Z"
+                                                            fill="#023F40" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="text-capitalize fs-9">total inflow</div>
+                                            <div class="fw-bold fs-6 text-break">₦157,108.79</div>
+                                        </div>
+                                        <!-- fifth done  -->
+
+                                        <div class="col-4 rounded-3 px-3 py-3 bg-white">
+                                            <div class="svg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                                    viewBox="0 0 88 88" fill="none">
+                                                    <rect width="88" height="88" rx="44" fill="#E6ECEC" />
+                                                    <mask id="mask0_2579_2932" style="mask-type: alpha"
+                                                        maskUnits="userSpaceOnUse" x="16" y="16" width="56" height="56">
+                                                        <rect x="16" y="16" width="56" height="56" fill="#D9D9D9" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_2579_2932)">
+                                                        <path
+                                                            d="M30.6865 57.1698L28.25 54.7333L51.2109 31.7499H30.3365V28.2501H57.1697V55.0833H53.6699V34.2089L30.6865 57.1698Z"
+                                                            fill="#023F40" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="text-capitalize fs-9">total outflow</div>
+                                            <div class="fw-bold fs-6 text-break">₦560,108.79</div>
+                                        </div>
+                                        <div class="col-7 rounded-3 px-3 py-3 bg-white">
+                                            <img src="/dashboard/images/chart.png" alt class="img-fluid" srcset />
+                                        </div>
+                                        <div class="col-5 rounded-3 px-3 py-3 bg-white">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="fw-bold fs-7">Notification</div>
+                                                <a href="#" class="fs-8 text-purple link-underline-opacity-0 link-underline"> See all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- add staff modal -->
+                        <div class="modal fade" id="addnewstaff" tabindex="-1" data-bs-backdrop="static"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-6">New Staff</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label fs-8 fw-bold">Name</label>
+                                            <input type="text" class="form-control py-2 form-control-border"
+                                                id="newstaffname" placeholder="Enter Staff Name" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label fs-8 fw-bold">Position</label>
+                                            <select class="form-select form-control-border py-2 select-picker"
+                                                aria-label="StaffPositions">
+                                                <option disabled="disabled" selected>
+                                                    Select Staff Potion
+                                                </option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label fs-8 fw-bold">Email</label>
+                                            <input type="email" class="form-control py-2 form-control-border"
+                                                id="newstaffemail" placeholder="Enter Staff Email Address" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label fs-8 fw-bold">Password</label>
+                                            <input type="password" class="form-control py-2 form-control-border"
+                                                id="password" placeholder="Create Password" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">
+                                            Proceed
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="modal fade" id="logout" tabindex="-1" data-bs-backdrop="static" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content py-3">
-                        <div class="container pb-2 pt-4 text-purple text-center">
-                            <div class="fs-5 fw-bold">Log Out?</div>
-                            <div class="fs-7">are you sure you want to log out?</div>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-evenly py-3">
-                            <button type="button" class="btn text-purple btn-shadows fs-7 btn-light"
-                                data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn text-purple btn-shadows fs-7 btn-light">Log Out</button>
-                        </div>
 
+                    <!-- logout  -->
+                    <div class="modal fade" id="logout" tabindex="-1" data-bs-backdrop="static" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content py-3">
+                                <div class="container pb-2 pt-4 text-purple text-center">
+                                    <div class="fs-5 fw-bold">Log Out?</div>
+                                    <div class="fs-7">are you sure you want to log out?</div>
+                                </div>
+                                <hr />
+                                <div class="d-flex justify-content-evenly py-3">
+                                    <button type="button" class="btn text-purple btn-shadows fs-7 btn-light"
+                                        data-bs-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn text-purple btn-shadows fs-7 btn-light">
+                                        Log Out
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
