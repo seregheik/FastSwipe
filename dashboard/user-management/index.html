@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
     <div id="usedesktop" class="d-md-none bg-primary text-light">
         <div class="container">
             <div class="row vh-100 justify-content-center align-items-center">
@@ -166,7 +169,7 @@
                             </a>
                         </div>
                         <div class="empty">
-                             <a href="../staff-management/"
+                            <a href="../staff-management/"
                                 class="text-start btn d-flex align-items-center link-underline link-underline-opacity-0 fs-8 link-light link-opacity-75 link-opacity-100-hover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
@@ -423,6 +426,12 @@
     </main>
     <script src="/js/bootstrap.js"></script>
     <script src="/js/jquery.min.js"></script>
+    <script>
+        $(window).load(function () {
+            $(".preloader").delay(700).fadeOut("slow");
+            $("#overlayer").delay(700).fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

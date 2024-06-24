@@ -1,0 +1,41 @@
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2000;
+  background: #ffffff;
+}
+.loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  display: grid;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  --c: radial-gradient(farthest-side, #023f40 92%, #023f40);
+  background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%,
+    var(--c) 0 50%;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  animation: s2 1s infinite;
+}
+.loader::before {
+  margin: 4px;
+  /* filter: hue-rotate(52deg); */
+  background-size: 9px 9px;
+  animation-timing-function: linear;
+}
+
+@keyframes s2 {
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
