@@ -108,4 +108,11 @@ textarea {
   .text-red {
     color: #EA0000 !important;
   }
-
+  .circle-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
+  .btn-badge {
+    background-color: #CCD9D9;
+  }
