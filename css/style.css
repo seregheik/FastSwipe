@@ -258,7 +258,7 @@ ul li {
   --bs-btn-disabled-border-color: #023f40;
   --bs-gradient: none;
 }
-/* .preloader {
+.preloader {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -289,6 +289,7 @@ ul li {
 }
 .loader::before {
   margin: 4px;
+  /* filter: hue-rotate(52deg); */
   background-size: 9px 9px;
   animation-timing-function: linear;
 }
@@ -297,4 +298,4 @@ ul li {
   100% {
     transform: rotate(0.5turn);
   }
-} */
+}

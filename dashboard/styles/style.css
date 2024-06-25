@@ -73,46 +73,51 @@ textarea {
   height: 9px;
 }
 .red-box {
-    border-radius: 2px;
-    background: #EA0000;
-    width: 9px;
-    height: 9px;
-  }
-  .purple-box {
-    border-radius: 2px;
-    background: #023F40;
-    width: 9px;
-    height: 9px;
-  }
-  .green-box {
-    border-radius: 2px;
-    background: #05F228;
-    width: 9px;
-    height: 9px;
-  }
-  .pink-box {
-    border-radius: 2px;
-    background: #FF9D98;
-    width: 9px;
-    height: 9px;
-  }
-  .bg-red {
-    background: #EA0000;
-  }
-  .bg-yellow {
-    background: #ffc24c;
-  }
-  .text-yellow {
-    color: #ffc24c !important;
-  }
-  .text-red {
-    color: #EA0000 !important;
-  }
-  .circle-img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-  }
-  .btn-badge {
-    background-color: #CCD9D9;
-  }
+  border-radius: 2px;
+  background: #ea0000;
+  width: 9px;
+  height: 9px;
+}
+.purple-box {
+  border-radius: 2px;
+  background: #023f40;
+  width: 9px;
+  height: 9px;
+}
+.green-box {
+  border-radius: 2px;
+  background: #05f228;
+  width: 9px;
+  height: 9px;
+}
+.pink-box {
+  border-radius: 2px;
+  background: #ff9d98;
+  width: 9px;
+  height: 9px;
+}
+.bg-red {
+  background: #ea0000;
+}
+.bg-yellow {
+  background: #ffc24c;
+}
+.text-yellow {
+  color: #ffc24c !important;
+}
+.text-red {
+  color: #ea0000 !important;
+}
+.circle-img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.btn-badge {
+  background-color: #ccd9d9;
+}
+.notification-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
