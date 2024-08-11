@@ -58,6 +58,13 @@ body {
   --bs-btn-disabled-bg: #023f40;
   --bs-btn-disabled-border-color: #023f40;
 }
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #023f4083;
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem #023f40a4;
+}
 .w-100 {
   width: 100%;
 }
