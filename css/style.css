@@ -58,6 +58,9 @@ body {
   --bs-btn-disabled-bg: #023f40;
   --bs-btn-disabled-border-color: #023f40;
 }
+.w-100 {
+  width: 100%;
+}
 .btn-secondary {
   --bs-btn-color: #023f40;
   --bs-btn-bg: #05f228;
